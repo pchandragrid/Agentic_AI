@@ -1,0 +1,12 @@
+beautifulsoup4
+ddgs
+faiss-cpu
+fastapi
+google-cloud-aiplatform
+jinja2
+numpy
+pypdf
+requests
+sentence-transformers
+streamlit
+uvicorn
