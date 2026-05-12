@@ -118,7 +118,7 @@ Extend the agent with a tool for generating complex outputs — documents or cod
 
 ## How to submit
 
-1. Branch off `agentic`: `git checkout agentic && git checkout -b <your-name>/agentic-submission`.
+1. Branch off `agentic`: `git checkout agentic && git checkout -b <user-ldap-id>/agentic-submission`.
 2. Build your project on that branch.
 3. Open a Pull Request targeting the `agentic` branch.
 4. The AI reviewer runs automatically and posts detailed per-phase feedback.
