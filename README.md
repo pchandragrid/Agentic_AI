@@ -2,7 +2,9 @@
 
 > Grid University · Gen AI Training Program
 
-This branch is the **target** of your submission Pull Request for Module 3. Branch off this branch, build your project, then open a PR back into `agentic`. An AI reviewer will analyze your work phase-by-phase and post detailed feedback as a PR comment. For the full submission flow, see the [`main` branch README](https://github.com/griddynamics/gridu-genai/blob/main/README.md).
+This branch is the **target** of your submission Pull Request for Module 3. Branch off this branch, build your project, then open a PR back into `agentic`. Two AI reviewers — Claude and Gemini — run in parallel on every PR and each posts a detailed sticky comment with the verdict, phase-by-phase analysis, and concrete action items. For the full submission flow, see the [`main` branch README](https://github.com/griddynamics/gridu-genai/blob/main/README.md).
+
+> ⚠️ **Heads-up:** the Pull Request you will open targets this branch but **will never be merged.** The `agentic` branch is an evaluation target only. Your professor reads your code and the AI reviews on the PR thread, then closes the PR. No code from any submission ever lands on `agentic`.
 
 ---
 
@@ -121,6 +123,8 @@ Extend the agent with a tool for generating complex outputs — documents or cod
 1. Branch off `agentic`: `git checkout agentic && git checkout -b <user-ldap-id>/agentic-submission`.
 2. Build your project on that branch.
 3. Open a Pull Request targeting the `agentic` branch.
-4. The AI reviewer runs automatically and posts detailed per-phase feedback.
+4. Two AI reviewers (Claude + Gemini) run automatically and each posts a sticky PR comment with verdict, technical-requirements table, per-phase analysis, and action items.
+5. Push more commits to re-trigger the reviewers. Each bot updates its existing comment in place.
+6. When you reach `passed` / `passed_with_notes` on both, request final review from your professor.
 
 Good luck.
