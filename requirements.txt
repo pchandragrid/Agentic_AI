@@ -1,11 +1,13 @@
+google-adk
 beautifulsoup4
 ddgs
 faiss-cpu
 fastapi
-google-cloud-aiplatform
 jinja2
+mcp
 numpy
 pypdf
+python-dotenv
 requests
 sentence-transformers
 streamlit

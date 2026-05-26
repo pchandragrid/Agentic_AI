@@ -10,7 +10,7 @@ from app.agent import ask_agent
 st.set_page_config(
     page_title="Nexus AI Engine",
     page_icon="✨",
-    layout="wide",
+    layout="wide",  
     initial_sidebar_state="expanded"
 )
 
