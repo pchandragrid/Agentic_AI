@@ -1,0 +1,23 @@
+# Virtual environments
+venv/
+venv_311/
+.venv/
+.venv311/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/
+
+# Template agent (generated for reference)
+template_agent/
