@@ -1,15 +1,30 @@
-import vertexai
-from vertexai.generative_models import GenerativeModel
+import asyncio
+from dotenv import load_dotenv
+from google.adk.agents import LlmAgent
+from google.adk.runners import InMemoryRunner
 
-vertexai.init(
-    project="gd-gcp-internship-ds",
-    location="us-central1"
-)
+# Load ADK-style env vars
+load_dotenv()
 
-model = GenerativeModel("gemini-2.0-flash")
+async def main():
+    agent = LlmAgent(
+        model="gemini-2.0-flash",
+        name="test_agent",
+        instruction="Explain what a RAG agent is in simple words"
+    )
+    runner = InMemoryRunner(agent=agent, app_name="test_agent")
+    
+    print("Invoking ADK Agent...")
+    
+    async for event in runner.run_async(
+        user_id="test_user",
+        session_id="test_session"
+    ):
+        if event.content and event.content.parts:
+            for part in event.content.parts:
+                if hasattr(part, 'text') and part.text:
+                    print(part.text, end="")
+    print()
 
-response = model.generate_content(
-    "Explain what a RAG agent is in simple words"
-)
-
-print(response.text)
+if __name__ == "__main__":
+    asyncio.run(main())
